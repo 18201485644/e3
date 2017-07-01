@@ -2,7 +2,11 @@ package cn.e3mall.pojo;
 
 import java.io.Serializable;
 import java.util.Date;
-
+/**
+ * 商品信息类
+ * @author gys
+ *
+ */
 public class TbItem implements Serializable{
     private Long id;
 

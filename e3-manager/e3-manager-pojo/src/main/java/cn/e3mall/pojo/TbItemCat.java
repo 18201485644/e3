@@ -2,23 +2,28 @@ package cn.e3mall.pojo;
 
 import java.io.Serializable;
 import java.util.Date;
-
+/**
+ * 商品分类选择节点类
+ * @author gys
+ *
+ */
 public class TbItemCat implements Serializable{
-    private Long id;
+    private Long id;//id[类目id]
 
-    private Long parentId;
+    private Long parentId;//parent_id[父类目ID=0时，代表的是一级的类目]
 
-    private String name;
+    private String name;//name[类目名称]
 
-    private Integer status;
-
+    private Integer status;//status[状态。可选值:1(正常),2(删除)]
+    //sort_order[排列序号，表示同级类目的展现次序，如数值相等则按名称次序排列。取值范围:大于零的整数]
+    //叶子节点子节点
     private Integer sortOrder;
 
-    private Boolean isParent;
+    private Boolean isParent;//is_parent[该类目是否为父类目，1为true，0为false,即是否有子节点]
 
-    private Date created;
+    private Date created;//created[创建时间]
 
-    private Date updated;
+    private Date updated;//updated[更新时间]
 
     public Long getId() {
         return id;
