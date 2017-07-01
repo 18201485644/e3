@@ -6,9 +6,7 @@
 		<artifactId>e3-parent</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
-	<groupId>cn.e3mall</groupId>
 	<artifactId>e3-manager</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<dependencies>
 		<dependency>
@@ -16,13 +14,16 @@
 			<artifactId>e3-common</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
+		<dependency>
+			<groupId>com.github.pagehelper</groupId>
+			<artifactId>pagehelper</artifactId>
+		</dependency>
 	</dependencies>
 	<modules>
 		<module>e3-manager-dao</module>
 		<module>e3-manager-interface</module>
 		<module>e3-manager-pojo</module>
 		<module>e3-manager-service</module>
-		<module>e3-manager-web</module>
 	</modules>
 	<build>
 		<plugins>
